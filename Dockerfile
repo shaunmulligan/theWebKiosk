@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
     libpangocairo-1.0-0 libnss3 \
     libgdk-pixbuf2.0-0 libnotify4 \
     libgles2-mesa-dev libraspberrypi-bin \
-    libraspberrypi-dev && \
+    libraspberrypi-dev libasound2 && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Instructions from https://www.raspberrypi.org/forums/viewtopic.php?t=146729
@@ -21,6 +21,5 @@ RUN adduser --disabled-password --gecos '' pi
 RUN usermod -a -G pi,adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev pi
 
 ENV INITSYSTEM=on
-
-USER pi
-CMD ["ls", "-alh"]
+COPY launch.sh ./
+CMD ["bash", "launch.sh"]
