@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
 RUN wget https://github.com/penk/SlateKit/releases/download/baremetal/oxide-eglfs-rpi.tgz && tar xvpf oxide-eglfs-rpi.tgz && rm oxide-eglfs-rpi.tgz
 
 RUN adduser --disabled-password --gecos '' pi
-RUN usermod -a -G pi,adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev,api,i2c,gpio pi
+RUN usermod -a -G pi,adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev pi
 
 ENV INITSYSTEM=on
 
