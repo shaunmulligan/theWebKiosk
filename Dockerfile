@@ -1,5 +1,5 @@
 # Base image from: https://hub.docker.com/r/resin/raspberrypi-buildpack-deps/tags/
-FROM resin/raspberrypi-buildpack-deps:jessie-20160714
+FROM resin/raspberrypi2-buildpack-deps:jessie-20160714
 
 # here we install apt dependencies. We also remove the apt lists in the same step,
 # this reduces the size of the docker image.
