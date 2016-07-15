@@ -24,6 +24,6 @@ export QT_QPA_EGLFS_HIDECURSOR=1
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/oxide/usr/lib/arm-linux-gnueabihf/
 
-echo URL
+echo $URL
 
-qmlscene  /opt/oxide/webview.qml
+qmlscene  $URL /opt/oxide/webview.qml
