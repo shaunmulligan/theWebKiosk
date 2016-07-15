@@ -8,7 +8,7 @@ Item {
 	id: webview
 	url: {
     console.log("got argument: " + Qt.application.arguments[1])
-    return Qt.application.arguments[1] or "http://google.com"
+    return Qt.application.arguments[1]
   }
 	anchors.top: parent.top
 	anchors.left: parent.left
