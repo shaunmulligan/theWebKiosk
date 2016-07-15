@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
     libpangocairo-1.0-0 libnss3 \
     libgdk-pixbuf2.0-0 libnotify4 \
     libgles2-mesa-dev libraspberrypi-bin \
-    libraspberrypi-dev libasound2 && \
+    libraspberrypi-dev libasound2 dbus && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Instructions from https://www.raspberrypi.org/forums/viewtopic.php?t=146729
