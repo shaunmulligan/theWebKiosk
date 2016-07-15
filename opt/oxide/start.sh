@@ -1,5 +1,7 @@
 #!/bin/bash
 
+URL=$1
+
 if [ ! -e /opt/oxide/.started ]; then
 
 sudo rm /usr/lib/arm-linux-gnueabihf/libGLESv2.so.2
@@ -22,6 +24,6 @@ export QT_QPA_EGLFS_HIDECURSOR=1
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/oxide/usr/lib/arm-linux-gnueabihf/
 
-echo $KIOSK_URL
+echo URL
 
-qmlscene $KIOSK_URL /opt/oxide/webview.qml
+qmlscene  /opt/oxide/webview.qml
