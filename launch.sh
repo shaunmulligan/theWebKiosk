@@ -6,4 +6,4 @@ chmod 777 /dev/vchiq
 chown root:pi /opt/oxide/usr/lib/arm-linux-gnueabihf/oxide-qt/chrome-sandbox
 chmod 4755 /opt/oxide/usr/lib/arm-linux-gnueabihf/oxide-qt/chrome-sandbox
 groups pi
-su - pi -c /opt/oxide/start.sh $KIOSK_URL
+su - pi -c "/opt/oxide/start.sh $KIOSK_URL"
