@@ -22,4 +22,4 @@ export QT_QPA_EGLFS_HIDECURSOR=1
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/oxide/usr/lib/arm-linux-gnueabihf/
 
-qmlscene "http://resin.io" /opt/oxide/webview.qml
+qmlscene $KIOSK_URL /opt/oxide/webview.qml
