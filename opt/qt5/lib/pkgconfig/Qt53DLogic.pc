@@ -1,0 +1,14 @@
+prefix=/home/penk/raspberry/rootfs/opt/qt5
+exec_prefix=${prefix}
+libdir=/opt/qt5/lib
+includedir=/opt/qt5/include
+
+
+Name: Qt5 3DLogic
+Description: Qt 3DLogic module
+Version: 5.6.0
+Libs: -L${libdir} -lQt53DLogic 
+Libs.private: -L/home/penk/raspberry/rootfs/usr/lib/arm-linux-gnueabihf -L/opt/qt5/lib -lQt53DCore -L/opt/qt5/lib -lQt5Gui -lQt5Core -lpthread -lGLESv2  
+Cflags: -I${includedir}/Qt3DLogic -I${includedir}
+Requires: Qt5Core Qt5Gui Qt53DCore
+

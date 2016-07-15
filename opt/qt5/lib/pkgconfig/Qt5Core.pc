@@ -1,0 +1,15 @@
+prefix=/home/penk/raspberry/rootfs/opt/qt5
+exec_prefix=${prefix}
+libdir=/opt/qt5/lib
+includedir=/opt/qt5/include
+
+host_bins=${prefix}/bin
+qt_config=minimal-config small-config medium-config large-config full-config gtk2 gtkstyle fontconfig evdev tslib xkbcommon-evdev xlib xrender xcb-plugin xcb-qt xcb-xlib xcb-sm accessibility-atspi-bridge gbm linuxfb c++11 accessibility egl eglfs eglfs_brcm openvg opengl opengles2 shared qpa reduce_exports clock-gettime clock-monotonic posix_fallocate mremap getaddrinfo ipv6ifname getifaddrs inotify eventfd threadsafe-cloexec system-jpeg png system-freetype harfbuzz system-zlib mtdev nis cups iconv glib dbus openssl xcb xinput2 rpath alsa pulseaudio gstreamer-0.10 icu concurrent audio-backend release
+
+Name: Qt5 Core
+Description: Qt Core module
+Version: 5.6.0
+Libs: -L${libdir} -lQt5Core 
+Libs.private: -lpthread -lz -licui18n -licuuc -licudata -L/opt/qt5/lib -lqtpcre -lm -ldl -L/home/penk/raspberry/rootfs/usr/lib/arm-linux-gnueabihf -lgthread-2.0 -pthread -lglib-2.0 -lrt  
+Cflags: -I${includedir}/QtCore -I${includedir}
+
