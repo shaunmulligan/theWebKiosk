@@ -1,0 +1,3 @@
+TARGETS = rsyslog dhcpcd triggerhappy killprocs bootlogs motd dbus single dphys-swapfile ntp cron rsync ssh lightdm bluetooth avahi-daemon plymouth rc.local rmnologin
+INTERACTIVE =
+dbus: rsyslo

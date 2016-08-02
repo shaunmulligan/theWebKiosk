@@ -1,0 +1,2 @@
+TARGETS = fake-hwclock dhcpcd triggerhappy lightdm bluetooth avahi-daemon plymouth urandom alsa-utils sendsigs rsyslog umountnfs.sh rpcbind nfs-common hwclock.sh networking umountfs umountroot halt reboot
+sendsigs: alsa-utils lightdm plymouth triggerhappy 
