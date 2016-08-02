@@ -22,4 +22,6 @@ RUN adduser --disabled-password --gecos '' pi
 RUN usermod -a -G pi,adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev pi
 
 COPY launch.sh ./
+ENV INITSYSTEM=on
+ENV KIOSK_URL=http://camendesign.com/code/video_for_everybody/test.html
 CMD ["bash", "launch.sh"]
